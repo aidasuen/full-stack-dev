@@ -1,1 +1,12 @@
-
+mkdir adventure_journey- создание директории adventure_journey
+cd adventure_journey- переход в директорию adventure journey
+touch journal.txt- cоздание файла journal.txt
+mkdir maps –создание директории maps внутри директории adventure_journey
+mkdir inventory- создание директории maps внутри директории adventure_journey
+cp map1.txt ../inventory/forest_map.txt- копирование файла map1.txt в директорию inventory под названием forest_map.txt
+mv journal.txt ../inventory/- перенос файла journal.txt из директории adventure_journey в директорию inventory
+ls- проверка того какие файлы или директории находятся внутри директории 
+rm supplies_list.txt- удаление файла supplies_list.txt 
+mv log_day2.txt log_day2_mountain.txt- переименование файла с наименования log_day2.txt на новое наименование log_day2_mountain.txt
+rm -r adventure_journey- удаление всей директории со всем содержимым внутри
+cd ..- переход выше 
