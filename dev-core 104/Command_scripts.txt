@@ -1,0 +1,23 @@
+mkdir project-создание директории
+cd project-переход в директорию
+mkdir src-создание поддиректории
+mkdir tests- создание поддиректории
+mkdir docs- создание поддиректории
+cd docs-переход в директорию docs
+touch readme.txt-создание файла
+echo “Project Documentation”>readme.txt-добавление строки в файл
+cd ..-переход выше
+cd src-переход в директорию src
+touch main.py-создание файла
+mv readme.txt ../src-перенос файла в директорию src
+touch project_structure.txt-создание файла
+ls -R project- вывод структуры директории
+echo “результаты команды ls -R project”> project_structure.txt
+touch log.txt-создание файла
+nano log.txt-добавление строк в файл
+cat log.txt | grep “error”-поиск слова error в файле log.txt
+wc -l log.txt-узнала что 14 строк в файле
+find ~ -type f -name "*.txt"-поиск всех файлов с расширением .txt
+touch txt_files_list.txt-создание файла
+nano txt_files_list.txt-добавила результаты команды find ~ -type f -name "*.txt"
+cat  txt_files_list.txt-просмотр что внутри файла
