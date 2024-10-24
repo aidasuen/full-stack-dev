@@ -1,0 +1,24 @@
+mkdir new_project- новая директория
+cd new_project-переход в директорию
+mkdir docs-создание новой папки
+mkdir scr- создание новой папки
+mkdir data- создание новой папки
+mkdir logs- создание новой папки
+cd docs- переход в директорию
+touch readme.txt-создание файла
+touch script.sh- создание файла
+echo '#!/bin/bash' > src/script.sh-добавление команды
+echo "echo 'Привет.Это скрипт.'" >> src/script.sh- добавление описание скрипта
+chmod +x src/script.sh-сделать исполняемым скрипт
+touch info.txt-создание файла
+touch output.log-создание файла
+cat docs/readme.txt- вывод содержимого в файле
+cat data/info.txt- вывод содержимого в файле
+cat data/info.txt| grep "данные"- поиск этого слова в файле
+./src/script.sh- вывод скрипта
+./src/script.sh > logs/output.log- перенаправить вывод скрипта в файл
+cat logs/output.log- вывод содержимого в файле
+touch commands_history.txt-создание файла
+nano commands_history.txt-добавление описание всех команд в файл
+find ~ -type f -name "*.txt"-поиск всех файлов с .txt расширением
+ ls -R-вывод структуры
