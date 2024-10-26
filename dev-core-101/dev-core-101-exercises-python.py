@@ -11,7 +11,7 @@ import random
 number_to_guess = random.randint(1, 10)
 attempts = 0
 
-print("Загадала число от 1 до 100. Попробуй угадать:")
+print("Загадала число от 1 до 10. Попробуй угадать:")
 
 while True:
     who_guess = input("Какие есть предположения? Введи число: ")
