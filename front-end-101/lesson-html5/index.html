@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Моя первая страница</title>
+        <style>
+            body {
+                background-color: lightcyan;
+             
+                h1 {
+                color: lightcoral;
+                font-size: 30px;
+                margin-left: 120px
+            }
+            }
+            h2, h3, h4, h5, h6, h7 {
+                color: lightcoral;
+                font-size: 18px;
+                margin-left: 120px;
+            }
+           
+        form {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid lightcoral;
+            border-radius: 7px;
+            background-color: white;
+            width: 300px; /
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            text-align: center; 
+        }
+        input, textarea, button {
+            width: 100%;
+            padding: 2px;
+            margin-bottom: 10px;
+            border: 1px solid lightgray;
+            border-radius: 7px;
+            font-size: 16px;
+            text-align: center; 
+        }
+        button {
+            background-color: lightcoral;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+      </style>  
+        </header>
+        
+        
+        <main>
+     <body>
+        <h1><strong>Аида</strong></h1>
+        <p><em>Мне <span class="highlight">26 лет</span>. Родилась в Аксае, ЗКО.<br><br>
+            Получила образование по специальности <span class="highlight">"Международное право"</span>.<br><br>
+            Живу в Алматы. Работаю трейдером.</em></p>
+        </main>
+       
+        
+        <section id="hobbies">
+        <h2><p><strong>Моё хобби</strong></p></h2>
+       <ul>
+        <li>Играть в настольные игры</li>
+        <li>Теннис</li>
+        <li>Вокал</li>
+        <ol>Путешествия: 
+            <li>Посетила 25 стран</li>
+            <a href="https://www.tripadvisor.ru/"target="_blank">Экскурсии и места в путешествиях</a>
+            <li>Люблю спонтанные путешествия</li>
+        </ol>
+        </ul>
+        </section>
+        
+        <article>
+        <h3><strong>Таблица любимых книг или расписания</strong></h3>
+        <table border="1">
+            <tr>
+                <th>Название</th>
+                <th>Автор</th>
+                <th>Год</th>
+            </tr>
+            <tr>
+                <td>Дюна</td>
+                <td>Фрэнк Герберт</td>
+                <td>1965</td>
+            </tr>
+            <tr>
+                <td>Сильмариллион</td>
+                <td>Джон Толкин</td>
+                <td>1977</td>
+            </tr>
+            <tr>
+                <td>1984</td>
+                <td>Джордж Оруэлл</td>
+                <td>1949</td>
+            </tr>
+        </table>
+        </article>
+        
+        
+        <footer>
+         <h4>Контактная форма</h4>
+            
+            <form action="/submit" method="POST">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name">
+            <br><br>
+            <label for="email">Электронная почта:</label>
+            <input type="email" id="email" name="email">
+            <br><br>
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" rows="3" cols="30"></textarea>
+            
+            <button type="submit">Отправить</button>
+        </form>
+        </footer>
+<section>
+    <h5><strong>Аудио</strong></h5>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            Ваш браузер не поддерживает элемент <code>audio</code>.
+        </audio>
+<h6>Видео</h6>
+        <video controls width="600">
+            <source src="video.mp4" type="video/mp4">
+            Ваш браузер не поддерживает элемент <code>video</code>.
+        </video>
+        
+        <figure>
+            <figcaption style="color: lightcoral; font-size: 18px; margin: 10px ;"><strong>Это пример изображения с подписью</strong></figcaption>
+            <img src="image.png" alt="Это пример изображения"  width="300" height="200" >
+            </figure>
+    </section>
+    <br>
+    <h7 style="margin-left: 100px;"><strong>Простая графика на canvas</strong></h7>
+    <section>
+        <canvas id="myCanvas" width="400" height="200"></canvas>
+<script>
+    var canvas = document.getElementById('myCanvas');
+    var context = canvas.getContext('2d');
+    context.fillStyle = 'red';
+    context.fillRect(50, 50, 300, 100);
+</script>
+</section>
+    </body>
+</html>
