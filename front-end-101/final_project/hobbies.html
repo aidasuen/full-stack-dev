@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles1.css">
+    <title>Увлечения</title>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">Обо мне</a></li>
+                <li><a href="projects.html">Проекты</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="hobbies.html">Увлечения</a></li>
+                <li><a href="achievement.html">Достижения</a></li>
+            </ul>
+        </nav>
+    </header>
+    <style>
+    body {
+        color: white;
+        font-size: 18px;
+        margin: 0;
+     
+    }
+    
+    .image-container {
+       position: relative; /* Для позиционирования внутренних элементов */
+        width: 100%; /* Контейнер занимает всю ширину */
+        height: 100%; /* Контейнер занимает всю высоту */
+    }
+    
+    figure {
+        margin: 0;
+        padding: 100px;
+        position: absolute; /* Размещаем изображения с помощью абсолютного позиционирования */
+    }
+    
+    .left {
+        left: 100px; /* Изображение с левой стороны */
+        top: -350px;
+    }
+    
+    .right {
+        right: 100px; /* Изображение с правой стороны */
+        top: -350px;
+    }
+    
+    .below {
+        left: 50%;
+        margin-top: -120px; 
+        transform: translateX(-50%); /* Центрируем по горизонтали относительно точки */
+        display: flex;
+        flex-direction: column;
+    }
+    
+    figcaption {
+        text-align: center; /* Центрирование текста */
+        margin-top: 50px; /* Отступ сверху для подписи */
+    }
+    
+    footer {
+        position: absolute;
+        bottom: 0;
+    }
+    
+    h1 {
+        text-align: center;
+    }
+</style>    
+</head>
+
+    
+    <body>
+    <section id="hobbies">
+        <h1><strong>Моё хобби</strong></h1>
+        <ul>
+            <li>Играть в настольные игры</li>
+            <li>Теннис</li>
+            <li>Вокал</li>
+            <li>Путешествия:
+                <ol>
+                    <li>Посетила 25 стран</li>
+                    <li>Люблю спонтанные путешествия</li>
+                </ol>
+            </li>
+            <li><a href="https://www.tripadvisor.ru/" target="_blank">Экскурсии и места в путешествиях</a></li>
+        </ul>
+    </section>
+
+    <section class="image-container">
+        <figure class="left">
+            <figcaption>Теннис:</figcaption>
+            <img src="media/tennis.jpg" alt="Теннис" width="300" height="400">
+        </figure>
+        <figure class="right">
+            <figcaption>Путешествия:</figcaption>
+            <img src="media/IMG_1524.JPG" alt="Путешествие" width="300" height="400">
+        </figure>
+        <figure class="below">
+            <figcaption>Настольные игры:</figcaption>
+            <img src="media/IMG_2006.JPG" alt="Настольные игры" width="300" height="300">
+        </figure>
+    </section>
+
+    <footer>
+        Аида 2024
+    </footer>
+</body>
+</html>

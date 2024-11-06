@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles1.css"> 
+    <title>Мои проекты</title>
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html">Обо мне</a></li>
+            <li><a href="projects.html">Проекты</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="hobbies.html">Увлечения</a></li>
+            <li><a href="achievement.html">Достижения</a></li>
+        </ul>
+    </nav>
+</head>
+<body>
+    <style>
+        body {
+            color: white;
+            font-size: 18px;
+        }
+
+        footer {
+            position: relative;
+        }
+
+        /* Контейнер для проекта, текст и изображение слева */
+        .project {
+            display: flex; /* Flexbox для выравнивания элементов по горизонтали */
+            justify-content: flex-start; /* Все элементы идут слева */
+            align-items: flex-start; /* Элементы выравниваются по верху */
+            margin: 10px 0; /* Отступы сверху и снизу */
+        }
+
+        /* Контейнер для текста и изображения */
+        .project-left {
+            display: flex;
+            flex-direction: column; /* Элементы располагаются вертикально (текст сверху, картинка снизу) */
+            margin-right: 80px; /* Отступ справа от блока с проектом */
+        }
+
+        /* Стиль для текста */
+        .project-text {
+    margin-bottom: 10px;
+    color: white;
+    text-align: left; /* Выровнять текст слева */
+    margin-left: 150px; /* Сдвиг текста вправо */
+}
+
+        /* Стиль для изображения */
+        .project-image img {
+            width: 600px;
+            height: 500px;
+            border-radius: 8px; /* Скругленные углы изображения */
+        }
+
+        /* Контейнер для ссылки */
+        .project-link {
+            display: flex; /* Flexbox для центрирования ссылки */
+            justify-content: center; /* Центрирование ссылки по горизонтали */
+            align-items: center; /* Центрирование ссылки по вертикали */
+            width: 100%; /* Занимает всю ширину */
+           margin-top: 200px;
+            
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            
+        }
+      
+
+    </style>
+
+    <h2>Мои проекты</h2>
+
+    <section class="project">
+        <div class="project-left">
+            <figure class="project-text">
+                <figcaption><strong>Калькулятор, сделанный на Python:</strong></figcaption>
+            </figure>
+            <div class="project-image">
+                <img src="media/dev-core-101.jpg" alt="Это калькулятор">
+            </div>
+        </div>
+        <div class="project-link">
+            <a href="https://github.com/aidasuen/full-stack-dev.git">>>Ссылка на остальные проекты</a>
+        </div>
+    </section>
+
+    <footer>
+        Аида 2024
+    </footer>
+</body>
+</html> 

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles1.css">
+    <title>Обо мне</title>
+  
+ <header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html">Обо мне</a></li>
+            <li><a href="projects.html">Проекты</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="hobbies.html">Увлечения</a></li>
+            <li><a href="achievement.html">Достижения</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <style>
+        body {
+            color: white;
+            font-size: 18px;
+            margin: 0;
+            text-align: left; /* Все элементы выравниваем слева */
+        }
+
+        footer {
+            position: absolute;
+            bottom: 10px;
+        }
+
+        figcaption {
+            text-align: left; /* Подпись к изображению будет выровнена по левому краю */
+        }
+
+        /* Стиль для основного контента */
+        .about {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; /* Центрируем по вертикали */
+            margin-bottom: 30px; /* Отступ снизу */
+        }
+
+        /* Стили для списка */
+        ul {
+            padding-left: 20px;
+        }
+
+        /* Стиль для изображения */
+        .left {
+            display: flex;
+            justify-content: flex-end; /* Выравниваем картинку справа */
+            margin-top: 60px;
+        }
+        h1 {
+            margin-left: 20px; /* Сдвигаем заголовок вправо */
+        }
+
+        img {
+            width: 300px;
+            height: 400px;
+            border-radius: 8px; /* Добавляем округлые углы */
+        }
+
+    </style>
+  <body>
+    <section class="about">
+        <div>
+            <h1><strong>Аида</strong></h1>
+            <ul>
+                <li><em>Мне 26 лет.</em></li>
+                <li><em>Родилась в Аксае, ЗКО.</em></li>
+                <li>
+                    <em>Получила образование по специальности:</em>
+                    <ol>
+                        <li><em>"Международное право".</em></li>
+                    </ol>
+                </li>
+                <li><em>Живу в Алматы.</em></li>
+                <li><em>Работаю трейдером.</em></li>
+            </ul>
+        </div>
+
+        <figure class="left">
+            <img src="media/IMG_1820.jpg" alt="Я">
+        </figure>
+    </section>
+
+    <footer>
+        Аида 2024
+    </footer>
+</body>
+</html>
