@@ -1,0 +1,30 @@
+PING google.com (142.250.74.206) 56(84) bytes of data.
+64 bytes from fra24s02-in-f14.1e100.net (142.250.74.206): icmp_seq=1 ttl=116 time=1.41 ms
+64 bytes from fra24s02-in-f14.1e100.net (142.250.74.206): icmp_seq=2 ttl=116 time=0.554 ms
+64 bytes from fra24s02-in-f14.1e100.net (142.250.74.206): icmp_seq=3 ttl=116 time=0.547 ms
+64 bytes from fra24s02-in-f14.1e100.net (142.250.74.206): icmp_seq=4 ttl=116 time=0.571 ms
+
+--- google.com ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3049ms
+rtt min/avg/max/mdev = 0.547/0.771/1.412/0.370 ms
+
+HTTP/2 301
+location: https://www.google.com/
+content-type: text/html; charset=UTF-8
+content-security-policy-report-only: object-src 'none';base-uri 'self';script-src 'nonce-td1viEq4GlQ5twLCGYIC0w' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp
+date: Tue, 19 Nov 2024 09:36:09 GMT
+expires: Thu, 19 Dec 2024 09:36:09 GMT
+cache-control: public, max-age=2592000
+server: gws
+content-length: 220
+x-xss-protection: 0
+x-frame-options: SAMEORIGIN
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Server:         127.0.0.53
+Address:        127.0.0.53#53
+
+Non-authoritative answer:
+Name:   google.com
+Address: 142.250.74.206
+Name:   google.com
+Address: 2a00:1450:4001:803::200e

@@ -1,0 +1,49 @@
+ ping 161.35.192.14
+PING 161.35.192.14 (161.35.192.14) 56(84) bytes of data.
+From 172.20.10.7 icmp_seq=3 Destination Host Unreachable
+From 172.20.10.7 icmp_seq=6 Destination Host Unreachable
+From 172.20.10.7 icmp_seq=9 Destination Host Unreachable
+From 172.20.10.7 icmp_seq=12 Destination Host Unreachable
+From 172.20.10.7 icmp_seq=15 Destination Host Unreachable
+^C
+--- 161.35.192.14 ping statistics ---
+16 packets transmitted, 0 received, +5 errors, 100% packet loss, time 15556ms
+
+ ping 161.35.192.14
+PING 161.35.192.14 (161.35.192.14) 56(84) bytes of data.
+64 bytes from 161.35.192.14: icmp_seq=1 ttl=44 time=260 ms
+64 bytes from 161.35.192.14: icmp_seq=2 ttl=44 time=218 ms
+64 bytes from 161.35.192.14: icmp_seq=3 ttl=44 time=250 ms
+64 bytes from 161.35.192.14: icmp_seq=4 ttl=44 time=270 ms
+64 bytes from 161.35.192.14: icmp_seq=5 ttl=44 time=291 ms
+64 bytes from 161.35.192.14: icmp_seq=6 ttl=44 time=230 ms
+64 bytes from 161.35.192.14: icmp_seq=7 ttl=44 time=309 ms
+^C
+--- 161.35.192.14 ping statistics ---
+7 packets transmitted, 7 received, 0% packet loss, time 6075ms
+rtt min/avg/max/mdev = 218.296/261.094/308.980/29.841 ms
+ ssh root@161.35.192.14
+Welcome to Ubuntu 24.04 LTS (GNU/Linux 6.8.0-48-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Tue Nov 19 10:12:40 UTC 2024
+
+  System load:  0.24              Processes:             100
+  Usage of /:   46.6% of 8.65GB   Users logged in:       0
+  Memory usage: 35%               IPv4 address for eth0: 161.35.192.14
+  Swap usage:   0%                IPv4 address for eth0: 10.19.0.9
+
+Expanded Security Maintenance for Applications is not enabled.
+
+147 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+Last login: Tue Nov 19 10:10:15 2024 from 95.82.118.254
+root@aida-server ~ #
