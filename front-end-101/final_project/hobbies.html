@@ -35,6 +35,7 @@
         margin: 0;
         padding: 100px;
         position: absolute; /* Размещаем изображения с помощью абсолютного позиционирования */
+        z-index: 1;
     }
     
     .left {
@@ -53,6 +54,7 @@
         transform: translateX(-50%); /* Центрируем по горизонтали относительно точки */
         display: flex;
         flex-direction: column;
+        z-index: 1;
     }
     
     figcaption {
@@ -61,13 +63,17 @@
     }
     
     footer {
-        position: absolute;
         bottom: 0;
+        position: fixed;
     }
     
     h1 {
         text-align: center;
     }
+    a {
+    z-index: 2; /* Позиционируем ссылку выше изображений */
+    position: relative; /* Добавляем позиционирование для z-index */
+}
 </style>    
 </head>
 

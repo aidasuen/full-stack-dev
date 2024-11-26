@@ -60,7 +60,7 @@ nav {
     padding: 10px; /* Заполнение внутри навигации */
     display: inline-block; /* Центрирование блока навигации */
     margin-top: 20px;
-    z-index: 10;
+    z-index: 5;
     
 }
 nav ul {
