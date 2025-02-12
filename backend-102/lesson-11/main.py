@@ -12,16 +12,14 @@ from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 
 app = FastAPI()
 
-# Настройки для хэширования паролей
+
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
-# Настройки для JWT
-SECRET_KEY = "your_secret_key"  # Замените на свой секретный ключ
+SECRET_KEY = "your_secret_key"
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 10
 REFRESH_TOKEN_EXPIRE_DAYS = 7
 
-# Хранилище данных
 users = {}  # Словарь для хранения пользователей (ключ — email)
 used_refresh_tokens = {}  # Словарь для использованных refresh токенов
 active_refresh_tokens = {}  # Словарь для активных refresh токенов
@@ -88,9 +86,8 @@ def verify_token(token: str):
         raise HTTPException(status_code=401, detail="Неверный токен")
 
 def get_current_user(token: str = Depends(oauth2_scheme)):
-    return verify_token(token)  # Проверка и получение пользователя
+    return verify_token(token) 
 
-# Эндпоинты
 @app.post("/auth/register")
 def register(user: UserRegister):
     if len(user.password) < 6:
@@ -237,8 +234,6 @@ def delete_place(place_id: int, user: dict = Depends(get_current_user)):
     
     if not place:
         raise HTTPException(status_code=404, detail="Место не найдено или нет прав на удаление")
-    
-    # Вместо создания новой локальной переменной places, нужно обновить глобальный список
    
     places = [place for place in places if not (place["id"] == place_id and place["owner"] == user["email"])]
     
