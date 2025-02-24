@@ -21,10 +21,10 @@ CREATE TABLE customers (
 CREATE TABLE orders (
     id INT AUTO_INCREMENT PRIMARY KEY,
     customer_id INT,
-    total_amount INTEGER,
+    total_amount DECIMAL(10, 2),  
     order_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    order_status ENUM('Pending', 'Completed', 'Cancelled', 'Shipped') DEFAULT 'Pending', 
-    payment_method ENUM('Credit Card' , 'Cash', 'Bank Transfer') DEFAULT 'Credit Card',
+    order_status ENUM('pending', 'completed', 'cancelled', 'shipped') DEFAULT 'pending', 
+    payment_method ENUM('credit card', 'cash', 'bank transfer') DEFAULT 'credit card',
     FOREIGN KEY (customer_id) REFERENCES customers(id)
 );
 
@@ -33,18 +33,17 @@ CREATE TABLE order_items (
     order_id INT,
     product_id INT,
     quantity INT,
-    price DECIMAL(10, 2),
+    price DECIMAL(10, 2) NOT NULL,  
     FOREIGN KEY (order_id) REFERENCES orders(id),
     FOREIGN KEY (product_id) REFERENCES products(id)
-
-)
+);
 
 INSERT INTO products (name, description, price, category, status)
 VALUES 
-    ('Coffee', 'Freshly brewed coffee', 2000, 'Beverage', 'available'),
-    ('Cake', 'Delicious chocolate cake', 3000, 'Dessert', 'available'),
-    ('Sandwich', 'Tasty ham and cheese sandwich', 1500, 'Snack', 'available'),
-    ('Tea', 'Herbal tea', 1000, 'Beverage', 'available');
+    ('Coffee', 'Freshly brewed coffee', 2000.00, 'Beverage', 'available'),
+    ('Cake', 'Delicious chocolate cake', 3000.00, 'Dessert', 'available'),
+    ('Sandwich', 'Tasty ham and cheese sandwich', 1500.00, 'Snack', 'available'),
+    ('Tea', 'Herbal tea', 1000.00, 'Beverage', 'available');
 
 
 INSERT INTO customers (first_name, last_name, email, phone)
@@ -53,10 +52,10 @@ VALUES
     ('Ирина', 'Иванов', 'ivanova@example.com', '+7 123 456 7899');
 
 INSERT INTO orders (customer_id, total_amount, order_status, payment_method)
-VALUES (1, 5000, 'Completed', 'Cash');
+VALUES (1, 5000.00, 'completed', 'cash');
 
 INSERT INTO order_items (order_id, product_id, quantity, price)
 VALUES
-    (1, 1, 1, 2000),  --Coffee
-    (1, 2, 1, 3000);  --Cake
+    (1, 1, 1, 2000.00),  --Coffee
+    (1, 2, 1, 3000.00);  --Cake
 
